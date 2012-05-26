@@ -25,11 +25,11 @@ var benzene = ChemJS.createMolecule();
 
 ### Object Hierarchy (Summary):
 ```
-GraphJS
-└─┬ molecule
+ChemJS
+└─┬ molecules
   ├── atoms
   ├── bonds
-  ├── functional group (optional)
+  ├── functional groups (optional)
   └── rings (optional)
 ```
 ### ChemJS
