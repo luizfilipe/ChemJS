@@ -2,7 +2,9 @@
 
 ChemJS is a bare-bones Chemistry framework built on top of the GraphJS framework. ChemJS uses GraphJS to accomplish low-level representation and search algorithms. ChemJS is intended to be HTML5 WebWorker-compatible and NodeJS-compatible.
 
-This project was inspired by the ChemDoodle WebComponents project from iChemLabs. ChemJS is a re-purposed version designed for more bare-bones, DOM-independent performance with molecular simulation in mind.
+This project was inspired by the ChemDoodle WebComponents project from iChemLabs. ChemJS is a re-purposed version (written from the ground up) designed for more bare-bones, DOM-independent performance with molecular simulation in mind.
+
+ChemJS is currently a work in progress and development will commence after the GraphJS project has been finished.
 
 ## Usage
 
@@ -22,14 +24,14 @@ var benzene = ChemJS.createMolecule();
 ## API
 
 ### Object Hierarchy (Summary):
-
+```
 GraphJS
 └─┬ molecule
   ├── atoms
   ├── bonds
   ├── functional group (optional)
   └── rings (optional)
-
+```
 ### ChemJS
 
 The ChemJS object provides the highest level scope.
