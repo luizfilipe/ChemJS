@@ -1,0 +1,26 @@
+ChemJS To Do
+
+- see OpenBabel Atom class. Do I need to make a separate Atom class?
+- start implementing GraphJS functions so that ChemJS will work properly
+
+- start working on the annoying SMARTS/SMILES/MOL-READ/WRITE crap.
+
+
+
+-------------
+
+
+No more ChemDoodle web services or ChemSpider AJAX. Too frustrating.
+Solution:
+- ChemJS will support molecular construction of molecules based on MOL file string.
+- if SMILES are not available or the user desires some alternative format, they can use MY web services, which will include a very simple AJAX API with CORS enabled. FREE FOR ALL, as long as the service is not abused.
+
+function getMolFile(inputFormat, outputFormat) {
+	//returns a Mol file string, which you then pass into the readMOL
+}
+
+> this in itself can be an entire web service. 
+But how to make this system work for Apps running on Facebook domain or iFrame applications?
+
+- setupMetaData() function will also classify the molecule (aromatic, protein/nucleic acid, etc)
+
